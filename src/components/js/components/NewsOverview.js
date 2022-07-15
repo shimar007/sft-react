@@ -35,21 +35,24 @@ function NewsOverview() {
     if (newsOverview) {
         return (
             <div className="latest-news">
-                {newsOverview.collection_data.map((newsItem, index) => 
-                    {   
-                        if(index === 0) {
+                <div class="latest-news-left">
+                    {newsOverview.collection_data.slice(0,1).map((newsItem) => 
+                        {   
                             return (
                                 <NewsCard newsItem={newsItem} key={Math.random()}/>
                             )
                         }
-                        else {
+                    )}
+                </div>
+                <div class="latest-news-right">
+                    {newsOverview.collection_data.slice(1,4).map((newsItem) => 
+                        {
                             return (
                                 <NewsCard newsItem={newsItem} key={Math.random()}/>
                             )
                         }
-                        
-                    }
-                )}
+                    )}
+                </div>
             </div>
         );
     }

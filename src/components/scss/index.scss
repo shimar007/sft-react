@@ -10,7 +10,10 @@
 //including base files
 @import "../scss/base/base.scss";
 
-//including component files
+//including base components files
 @import "../scss/components/header.scss";
 @import "../scss/components/body-content.scss";
 @import "../scss/components/footer.scss";
+
+//including website components files
+@import "../scss/components/latest-news.scss";
