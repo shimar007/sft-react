@@ -1,7 +1,7 @@
 import {BrowserRouter as Router} from 'react-router-dom';
-import Header from './Header';
-import Body from './Body';
-import Footer from './Footer';
+import Header from './base/Header';
+import Body from './base/Body';
+import Footer from './base/Footer';
 import '../scss/index.scss';
 
 function Main() {

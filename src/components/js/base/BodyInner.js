@@ -1,9 +1,10 @@
 import React from "react";
+import NewsOverview from "../components/NewsOverview";
 
 function BodyInner() {
     return (
         <div className="main-content-inner-body">
-            This is for your main content body for news section
+            <NewsOverview/>
         </div>
     );
 }
