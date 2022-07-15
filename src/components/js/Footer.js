@@ -1,8 +1,12 @@
 import React from "react";
+import "../scss/components/footer.scss";
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer">
+            <div className="container">
+                This is for your footer section
+            </div>
         </footer>
     );
 }

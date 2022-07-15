@@ -1,0 +1,16 @@
+//including vendor files
+@import "../scss/vendor/rfs.scss";
+
+//including misc files
+@import "../scss/misc/breakpoints.scss";
+
+//including variables files
+@import "../scss/variables/variables.scss";
+
+//including base files
+@import "../scss/base/base.scss";
+
+//including component files
+@import "../scss/components/header.scss";
+@import "../scss/components/body-content.scss";
+@import "../scss/components/footer.scss";

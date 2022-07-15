@@ -2,8 +2,9 @@ import React from "react";
 
 function Sidebar() {
     return (
-        <sidebar>
-        </sidebar>
+        <aside className="sidebar">
+            This is for your sidebar section
+        </aside>
     );
 }
   

@@ -2,8 +2,11 @@ import React from "react";
 
 function Header() {
     return (
-        <sidebar>
-        </sidebar>
+        <header className="header">
+            <div className="container">
+                This is for your main navigation
+            </div>
+        </header>
     );
 }
 
