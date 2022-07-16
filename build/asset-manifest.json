@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sft-react/build/static/css/main.75d3d37c.css",
+    "main.js": "/sft-react/build/static/js/main.ec994be0.js",
+    "static/js/787.809fc0b0.chunk.js": "/sft-react/build/static/js/787.809fc0b0.chunk.js",
+    "index.html": "/sft-react/build/index.html",
+    "main.75d3d37c.css.map": "/sft-react/build/static/css/main.75d3d37c.css.map",
+    "main.ec994be0.js.map": "/sft-react/build/static/js/main.ec994be0.js.map",
+    "787.809fc0b0.chunk.js.map": "/sft-react/build/static/js/787.809fc0b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75d3d37c.css",
+    "static/js/main.ec994be0.js"
+  ]
+}
