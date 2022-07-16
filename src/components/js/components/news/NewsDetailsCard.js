@@ -24,35 +24,35 @@ function NewsDetailsCard() {
     //use effect for setting news overview data
     useEffect(() => {
 
+        //get news overview data
+        async function getNewsDetails() {
+            try {
+                //get news api link
+                const news_link_url = process.env.REACT_APP_NEWS_ENDPOINT;
+
+                //get response
+                const response = await axios.get(news_link_url);
+
+                //get news article data
+                const get_news_data = response.data.collection_data.find(newsItem => newsItem.URL === news_url);
+
+                //setting new details data
+                setNewsDetails(get_news_data);
+
+                //setting new page title
+                setTitle(get_news_data.Title);
+            }
+            catch (err) {
+            }
+        }
+
         //get news overview data 
         getNewsDetails();
 
         //document title set
         document.title = title;
 
-    }, [title]);
-
-    //get news overview data
-    async function getNewsDetails() {
-        try {
-            //get news api link
-            const news_link_url = process.env.REACT_APP_NEWS_ENDPOINT;
-
-            //get response
-            const response = await axios.get(news_link_url);
-
-            //get news article data
-            const get_news_data = response.data.collection_data.find(newsItem => newsItem.URL === news_url)
-
-            //setting new details data
-            setNewsDetails(get_news_data);
-
-            //setting new page title
-            setTitle(get_news_data.Title);
-        }
-        catch (err) {
-        }
-    }
+    }, [title, news_url]);
 
     if (newsDetails) {
 

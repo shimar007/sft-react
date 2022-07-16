@@ -26,10 +26,21 @@
             top: -3px;
         }
 
+        a {
+            text-decoration: none;
+
+            &:hover {
+                h3 {
+                    text-decoration: underline;
+                }
+            }
+        }
+
         h3 {
             text-transform: uppercase;
             color: var(--bs-dark);
             margin: 10px 0;
+            transition: all .3s;
 
             &:before {
                 content: '\2b';
