@@ -6,7 +6,7 @@ function BackButton () {
 
     return (
         <>
-          <a href="#" onClick={() => navigate(-1)} className="back-button">Back</a>
+          <a href="/#" onClick={() => navigate(-1)} className="back-button">Back</a>
         </>
     );
 };
