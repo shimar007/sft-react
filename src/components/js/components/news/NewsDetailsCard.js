@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
 import parse from 'html-react-parser';
 import axios from "axios";
+import BackButton from "../misc/BackButton";
 
 function NewsDetailsCard() {
 
@@ -63,6 +64,7 @@ function NewsDetailsCard() {
 
         return (
             <div className="news-details">
+                <BackButton />
                 <div className="news-details-wrapper">
                     <div className="news-details-content-wrapper">
                         <div className="news-details-image" style={{ backgroundImage: `url(${image_url})`}}/>
