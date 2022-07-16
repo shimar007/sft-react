@@ -1,19 +1,18 @@
-import {BrowserRouter as Router} from 'react-router-dom';
-import Favicon from 'react-favicon'
-import favicon from '../images/news-16x16.png';
-import Header from './base/Header';
-import Body from './base/Body';
-import Footer from './base/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import NewsDetailsPage from './pages/NewsDetailsPage';
 import '../scss/index.scss';
 
 function Main() {
     return (
-        <Router>
-            <Favicon url={favicon}/>
-            <Header/>
-            <Body/>
-            <Footer/>
-        </Router>
+        <div>
+            <Router>
+                <Routes>
+                    <Route path='/' element={(<HomePage />)}/>
+                    <Route path="/news/:news_id" element={<NewsDetailsPage />}/>
+                </Routes>
+            </Router>
+        </div>
     );
 }
   

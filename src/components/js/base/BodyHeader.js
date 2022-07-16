@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function BodyHeader() {
     return (
         <div className="main-content-intro">
             This is for your main content header section
@@ -8,4 +8,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default BodyHeader;
