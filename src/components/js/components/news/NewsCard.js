@@ -23,7 +23,7 @@ function NewsCard(props) {
     background_image = process.env.REACT_APP_DOMAIN_NAME + '/' + newsItem.Imageurl;
     
     return (
-        <Link to={`/news/${newsItem.ID}`} className="latest-news-item">
+        <Link to={`/news/${newsItem.URL}`} className="latest-news-item">
             <div className="latest-news-item-wrapper">
                 <div className="latest-news-item-image" style={{ backgroundImage: `url(${background_image})`}}></div>
                 <div className="latest-news-item-content-wrapper">

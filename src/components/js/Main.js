@@ -9,7 +9,7 @@ function Main() {
             <Router>
                 <Routes>
                     <Route path='/' element={(<HomePage />)}/>
-                    <Route path="/news/:news_id" element={<NewsDetailsPage />}/>
+                    <Route path="/news/:news_url" element={<NewsDetailsPage />}/>
                 </Routes>
             </Router>
         </div>

@@ -1,0 +1,21 @@
+.news-details {
+    width: 100%;
+
+    .news-details-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 300px;
+        width: 30%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+
+        @include respond-to(large-desktop) {
+            min-height: 250px;
+        }
+
+        @include respond-to(mobile-large) {
+            min-height: 150px;
+        }
+    }
+}
